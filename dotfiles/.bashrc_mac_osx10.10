@@ -1,0 +1,38 @@
+# Hyun's old mac bashrc script
+
+alias m7='ssh -XY hlim10@ssh.fsl.byu.edu'
+alias xsede='ssh hlim@login.xsede.org'
+alias stampede='ssh -XY hlim@stampede.tacc.utexas.edu'
+alias stampede2='ssh -XY hlim@stampede2.tacc.utexas.edu'
+alias bigmem='ssh -XY hlim10@bigmemssh.fsl.byu.edu'
+alias bigred2='ssh -XY lim10@bigred2.uits.iu.edu'
+alias comet='ssh -XY hyunlim@comet.sdsc.xsede.org'
+alias mira='ssh -XY hyunlim@mira.alcf.anl.gov'
+alias theta='ssh -XY hyunlim@theta.alcf.anl.gov'
+alias vesta='ssh -XY hyunlim@vesta.alcf.anl.gov'
+alias cooley='ssh -l hyunlim  -C -Y cooley.alcf.anl.gov'
+alias jlse='ssh -XY -i ~/.ssh/id_rsa hlim@login.jlse.anl.gov'
+#alias regent='ssh -XY hyun.lim@atpesc18.regent-lang.org' # No more using. Used for Legion
+#alias titan='ssh -XY csep63@titan.ccs.ornl.gov' #expired
+
+#alias vi='mvim'
+alias ls='ls -G'
+alias ll='ls -l'
+alias py36a='source activate py36'
+
+export PETSC_DIR=/Users/hyunlim/Desktop/install_files/petsc-3.5.4
+export PETSC_ARCH=arch-darwin-c-debug
+export DENDRO_DIR=$PWD
+
+# Rebuild openmpi with gcc
+export HOMEBREW_CC=gcc-6
+export HOMEBREW_CXX=g++-6
+
+# Use python 3 as default
+#source activate py36
+
+# Nice color scheme for title bar in iterm
+# Not working perfectly for tab bars. So far use dark theme for tab
+#echo -e "\033]6;1;bg;red;brightness;40\a"
+#echo -e "\033]6;1;bg;green;brightness;44\a"
+#echo -e "\033]6;1;bg;blue;brightness;52\a"
