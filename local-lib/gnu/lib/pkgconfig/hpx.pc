@@ -1,0 +1,15 @@
+prefix=/fslhome/dwn8/gnu
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hpx
+Description: The HPX-5 runtime system.
+URL: https://gitlab.crest.iu.edu/extreme/hpx
+Version: 5.0.0a1
+Requires: libffi
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhpx
+Libs.private:      -lrt -pthread -lsync 
+Requires.private: 
+

@@ -1,0 +1,43 @@
+SUMMARY OF THE Silo with HDF5 CONFIGURATION
+=================================
+
+Silo Version:           4.10.2
+Configured on:          Sat Nov 14 10:43:56 MST 2015
+Configured by:          dwn8@m7int01
+Configure command:      ./configure '--prefix=/fslhome/dwn8/intel-15.0.3' '--with-hdf5=/fslhome/dwn8/intel-15.0.3/include,/fslhome/dwn8/intel-15.0.3/lib' '--with-zlib=/fslhome/dwn8/intel-15.0.3/include,/fslhome/dwn8/intel-15.0.3/lib' 'CXX=icpc' 'CC=icc' 'FC=ifort' 'F77=ifort'
+Host system:            x86_64-unknown-linux-gnu
+Build system:           x86_64-unknown-linux-gnu
+Installation point:     /fslhome/dwn8/intel-15.0.3
+Source directory:       @UsingSrcDir@
+Archiver:               ar
+Ranlib:                 ranlib
+
+Configure Summary
+Compiling Options:
+                     C Compiler /apps/intel_parallel_studio_xe/2015_update3/bin/icc
+                       CPPFLAGS -I/fslhome/dwn8/intel-15.0.3/include  -I/fslhome/dwn8/intel-15.0.3/include
+                         CFLAGS -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement
+                        LDFLAGS -L/fslhome/dwn8/intel-15.0.3/lib  -L/fslhome/dwn8/intel-15.0.3/lib
+                           LIBS -lhdf5 -lz  -lz -lm
+Languages:
+                   C++ Compiler /apps/intel_parallel_studio_xe/2015_update3/bin/icpc
+                       CXXFLAGS -fPIC
+               Fortran Compiler /apps/intel_parallel_studio_xe/2015_update3/bin/ifort
+                        FCFLAGS -g
+                         FCLIBS  -L/apps/intel_parallel_studio_xe/2015_update3/impi/5.0.3.048/intel64/lib -L/apps/intel_parallel_studio_xe/2015_update3/tbb/lib/intel64/cc4.1.0_libc2.4_kernel2.6.16.21 -L/apps/intel_parallel_studio_xe/2015_update3/ipp/lib/intel64 -L/apps/intel_parallel_studio_xe/2015_update3/lib/intel64 -L/apps/intel_parallel_studio_xe/2015/mkl/lib/intel64 -L/apps/gcc/4.9.2/lib64 -L/apps/gcc/4.9.2/cloog/lib -L/apps/gcc/4.9.2/isl/lib -L/apps/gcc/4.9.2/mpc/lib -L/apps/gcc/4.9.2/mpfr/lib -L/apps/gcc/4.9.2/gmp/lib -L/apps/gdb/7.9.1/lib -L/apps/intel_parallel_studio_xe/2015_update3/composer_xe_2015.3.187/compiler/lib/intel64 -L/apps/gcc/4.9.2/lib64/../lib64 -L/apps/gcc/4.9.2/lib64/../lib64/ -L/apps/gcc/4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/ -L/apps/gcc/4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib64 -L/apps/gcc/4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../../lib64/ -L/lib/../lib64 -L/lib/../lib64/ -L/usr/lib/../lib64 -L/usr/lib/../lib64/ -L/apps/intel_parallel_studio_xe/2015_update3/impi/5.0.3.048/intel64/lib/ -L/apps/intel_parallel_studio_xe/2015_update3/ipp/lib/intel64/ -L/apps/intel_parallel_studio_xe/2015_update3/lib/intel64/ -L/apps/intel_parallel_studio_xe/2015/mkl/lib/intel64/ -L/apps/gcc/4.9.2/lib64/ -L/apps/gdb/7.9.1/lib/ -L/apps/gcc/4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/../../../ -L/lib64 -L/lib/ -L/usr/lib64 -L/usr/lib -lifport -lifcore -limf -lsvml -lm -lipgo -lirc -lpthread -lirc_s -ldl
+Features:
+                        Browser @UsingBrowser@
+                       Readline @UsingReadline@
+                           HDF5 @UsingHDF5@
+                          Silex @UsingSilex@
+                             Qt @UsingQt@
+                Qt moc Compiler 
+                    Qt CXXFLAGS 
+                        Qt LIBS 
+                         Python @UsingPython@
+                Python Compiler 
+                Python CPPFLAGS 
+Makefile Summary
+Compile command:         icc -DHAVE_CONFIG_H -I. -I..   -I/fslhome/dwn8/intel-15.0.3/include  -I/fslhome/dwn8/intel-15.0.3/include  -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement 
+Libtool command:         /bin/sh ../libtool --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I. -I..   -I/fslhome/dwn8/intel-15.0.3/include  -I/fslhome/dwn8/intel-15.0.3/include  -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement 
+Link command:            /bin/sh ../libtool --tag=CC   --mode=link icc  -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement  -L/fslhome/dwn8/intel-15.0.3/lib  -L/fslhome/dwn8/intel-15.0.3/lib -o make.settings -lhdf5 -lz  -lz -lm 

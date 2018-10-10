@@ -1,0 +1,11 @@
+prefix=/fslhome/dwn8/intel-15.0.3
+exec_prefix=/fslhome/dwn8/intel-15.0.3
+libdir=/fslhome/dwn8/intel-15.0.3/lib
+includedir=/fslhome/dwn8/intel-15.0.3/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 1.16
+Libs: -L/fslhome/dwn8/intel-15.0.3/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/fslhome/dwn8/intel-15.0.3/include

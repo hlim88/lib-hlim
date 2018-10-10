@@ -1,0 +1,49 @@
+SUMMARY OF THE Silo CONFIGURATION
+=================================
+
+Silo Version:           4.10.2
+Configured on:          Fri Feb  6 12:37:55 MST 2015
+Configured by:          dwn8@m7int01
+Configure command:      ./configure '--prefix=/fslhome/dwn8/gnu'
+Host system:            x86_64-unknown-linux-gnu
+Build system:           x86_64-unknown-linux-gnu
+Installation point:     /fslhome/dwn8/gnu
+Source directory:       @UsingSrcDir@
+Archiver:               ar
+Ranlib:                 ranlib
+
+Configure Summary
+Compiling Options:
+                     C Compiler /apps/gcc/4.8.2/bin/gcc
+                       CPPFLAGS 
+                         CFLAGS -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement
+                        LDFLAGS 
+                           LIBS -lz  -lm
+               Shared Libraries @UsingShared@
+               Static Libraries @UsingStatic@
+                        64 bits @Using64bits@
+                   Optimization @UsingOpt@
+Languages:
+                            C++ @UsingCxx@
+                   C++ Compiler /apps/gcc/4.8.2/bin/g++
+                       CXXFLAGS -fPIC
+                        Fortran @UsingFortran@
+               Fortran Compiler /apps/gcc/4.8.2/bin/gfortran
+                        FCFLAGS -g -O2
+                         FCLIBS  -L/apps/gcc/4.8.2/lib64/../lib64 -L/apps/gcc/4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2 -L/apps/gcc/4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/intel_compilers/2013.1.046/ipp/lib/intel64 -L/apps/intel_compilers/2013.1.046/lib/intel64 -L/apps/gcc/4.8.2/lib64 -L/apps/intel_compilers/2013.1.046/mkl/lib/intel64 -L/apps/gcc/4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/../../.. -lgfortran -lm -lquadmath
+Features:
+                        Browser @UsingBrowser@
+                       Readline @UsingReadline@
+                           HDF5 @UsingHDF5@
+                          Silex @UsingSilex@
+                             Qt @UsingQt@
+                Qt moc Compiler 
+                    Qt CXXFLAGS 
+                        Qt LIBS 
+                         Python @UsingPython@
+                Python Compiler 
+                Python CPPFLAGS 
+Makefile Summary
+Compile command:         gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement 
+Libtool command:         /bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement 
+Link command:            /bin/sh ../libtool --tag=CC   --mode=link gcc  -fPIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wdeclaration-after-statement   -o make.settings -lz  -lm 

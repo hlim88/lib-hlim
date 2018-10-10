@@ -1,0 +1,79 @@
+#!/bin/sh
+
+usage() {
+	cat <<EOF
+Usage:
+  /fslhome/dwn8/gnu/bin/jemalloc-config <option>
+Options:
+  --help | -h  : Print usage.
+  --version    : Print jemalloc version.
+  --revision   : Print shared library revision number.
+  --config     : Print configure options used to build jemalloc.
+  --prefix     : Print installation directory prefix.
+  --bindir     : Print binary installation directory.
+  --datadir    : Print data installation directory.
+  --includedir : Print include installation directory.
+  --libdir     : Print library installation directory.
+  --mandir     : Print manual page installation directory.
+  --cc         : Print compiler used to build jemalloc.
+  --cflags     : Print compiler flags used to build jemalloc.
+  --cppflags   : Print preprocessor flags used to build jemalloc.
+  --ldflags    : Print library flags used to build jemalloc.
+  --libs       : Print libraries jemalloc was linked against.
+EOF
+}
+
+prefix="/fslhome/dwn8/gnu"
+exec_prefix="/fslhome/dwn8/gnu"
+
+case "$1" in
+--help | -h)
+	usage
+	exit 0
+	;;
+--version)
+	echo "0.0.0-0-g0000000000000000000000000000000000000000"
+	;;
+--revision)
+	echo "2"
+	;;
+--config)
+	echo "--disable-option-checking --prefix=/fslhome/dwn8/gnu --disable-valgrind --disable-fill --disable-stats --enable-static --enable-shared --with-jemalloc-prefix=libhpx_global_ --with-install-suffix=_global --with-private-namespace=libhpx_global_ --cache-file=/dev/null --srcdir=../.././contrib/jemalloc 'CC=mpicc -std=gnu99' LDFLAGS=-L/apps/openmpi/1.8.1_intel-14.0.2/lib CPPFLAGS=-I/apps/openmpi/1.8.1_intel-14.0.2/include"
+	;;
+--prefix)
+	echo "/fslhome/dwn8/gnu"
+	;;
+--bindir)
+	echo "/fslhome/dwn8/gnu/bin"
+	;;
+--datadir)
+	echo "/fslhome/dwn8/gnu/share"
+	;;
+--includedir)
+	echo "/fslhome/dwn8/gnu/include"
+	;;
+--libdir)
+	echo "/fslhome/dwn8/gnu/lib"
+	;;
+--mandir)
+	echo "/fslhome/dwn8/gnu/share/man"
+	;;
+--cc)
+	echo "mpicc -std=gnu99"
+	;;
+--cflags)
+	echo "-std=gnu99 -Wall -Werror=declaration-after-statement -pipe -g3 -fvisibility=hidden -O3 -funroll-loops"
+	;;
+--cppflags)
+	echo "-I/apps/openmpi/1.8.1_intel-14.0.2/include -D_GNU_SOURCE -D_REENTRANT"
+	;;
+--ldflags)
+	echo "-L/apps/openmpi/1.8.1_intel-14.0.2/lib "
+	;;
+--libs)
+	echo " -lpthread"
+	;;
+*)
+	usage
+	exit 1
+esac

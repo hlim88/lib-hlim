@@ -1,0 +1,72 @@
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Sat Nov 14 10:05:37 MST 2015
+		  Configured by: dwn8@m7int02
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux m7int02 2.6.32-504.16.2.el6.x86_64 #1 SMP Tue Mar 10 17:01:00 EDT 2015 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /fslhome/dwn8/intel-15.0.3
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /apps/intel_parallel_studio_xe/2015_update3/bin/icc ( Intel(R) C Intel(R) 64 Compiler Version 15.0.3.187 Build 20150407)
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE  -I/fslhome/dwn8/intel-15.0.3/include -I/fslhome/dwn8/intel-15.0.3/include
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS:  -L/fslhome/dwn8/intel-15.0.3/lib -L/fslhome/dwn8/intel-15.0.3/lib
+ 	 	Extra libraries: -lrt -lsz -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: yes
+               Fortran Compiler: /apps/intel_parallel_studio_xe/2015_update3/bin/ifort ( Intel(R) Fortran Intel(R) 64 Compiler Version 15.0.3.187 Build 20150407)
+          Fortran 2003 Compiler: 
+                  Fortran Flags: 
+               H5 Fortran Flags:  -O3
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: yes
+                   C++ Compiler: /apps/intel_parallel_studio_xe/2015_update3/bin/icpc ( Intel(R) C++ Intel(R) 64 Compiler Version 15.0.3.187 Build 20150407)
+                      C++ Flags: 
+                   H5 C++ Flags:  
+                   AM C++ Flags: 
+             Shared C++ Library: yes
+             Static C++ Library: yes
+
+Features:
+---------
+                  Parallel HDF5: no
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib),szip(encoder)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
